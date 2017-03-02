@@ -16,7 +16,7 @@ responsibilities are:
  * Implement padding when flush is issued from file-systems in order to
    maintain data consistency
 
-Pblk integrates with the LightNVM subsystem. As such, pblk is initialized with
+Pblk integrates with the LightNVM :cite:`lightnvm` subsystem. As such, pblk is initialized with
 a user-defined range of LUNs. A single device can be carved out and shared
 among different pblk instances. Each instance owns a portion of the device’s
 capacity and leverages a portion of the device’s throughput. Each instance
@@ -42,6 +42,7 @@ Contents:
    os.rst
    tools.rst
    usage.rst
+   refs.rst
 
 Indices and tables
 ==================

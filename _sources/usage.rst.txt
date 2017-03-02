@@ -201,6 +201,7 @@ Content example::
 
 Entry 8161 is a writable entry. The following flags can be present in the write
 buffer and encoded as::
+
 	# I/O Type
 	PBLK_IOTYPE_USER = 1
 	PBLK_IOTYPE_GC = 2
@@ -209,7 +210,6 @@ buffer and encoded as::
 	PBLK_WRITTEN_DATA = 1 << 7 (128)
 	PBLK_SUBMITTED_ENTRY = 1 << 8 (256)
 	PBLK_WRITABLE_ENTRY = 1 << 9 (512)
-
 
 .. _sec-usage-control-knobs:
 
