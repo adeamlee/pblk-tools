@@ -190,6 +190,69 @@ supported parameters.</p>
 <p>... meta-data checking ...</p>
 <div class="section" id="check-meta-data">
 <h3>Check meta-data<a class="headerlink" href="#check-meta-data" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>nvm_pblk mdck /dev/nvme0n1 -b
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>line0045:
+  smeta_nvm_ret: ~
+  emeta_nvm_ret: <span class="o">{</span>result: 0x2ff, status: <span class="m">1</span><span class="o">}</span>
+line0045_smeta:
+  header:
+    crc: 0x40c70ec4
+    identifier: 0x70626c6b
+    uuid: <span class="o">[</span>0x0000, 0x0000, 0x0000, 0x0000<span class="o">]</span>
+    type: <span class="m">02</span>
+    version: <span class="m">01</span>
+    id: <span class="m">0045</span>
+  crc: 0x9ba7b43b
+  prev_id: <span class="m">0044</span>
+  seq_nr: <span class="m">0291</span>
+  window_wr_lun: <span class="m">00000004</span>
+line0045_emeta:
+  header:
+    crc: 0x0000
+    identifier: 0x0000
+    uuid: <span class="o">[</span>0x0000, 0x0000, 0x0000, 0x0000<span class="o">]</span>
+    type: <span class="m">00</span>
+    version: <span class="m">00</span>
+    id: <span class="m">0000</span>
+  crc: 0x0000
+  prev_id: <span class="m">0000</span>
+  seq_nr: <span class="m">0000</span>
+  window_wr_lun: <span class="m">00000000</span>
+  next_id: <span class="m">0000</span>
+  nr_lbas: <span class="m">0000</span>
+line0052:
+  smeta_nvm_ret: <span class="o">{</span>result: 0x2ff, status: <span class="m">1</span><span class="o">}</span>
+  emeta_nvm_ret: <span class="o">{</span>result: 0x2ff, status: <span class="m">1</span><span class="o">}</span>
+line0052_smeta:
+  header:
+    crc: 0x0000
+    identifier: 0x0000
+    uuid: <span class="o">[</span>0x0000, 0x0000, 0x0000, 0x0000<span class="o">]</span>
+    type: <span class="m">00</span>
+    version: <span class="m">00</span>
+    id: <span class="m">0000</span>
+  crc: 0x0000
+  prev_id: <span class="m">0000</span>
+  seq_nr: <span class="m">0000</span>
+  window_wr_lun: <span class="m">00000000</span>
+line0052_emeta:
+  header:
+    crc: 0x0000
+    identifier: 0x0000
+    uuid: <span class="o">[</span>0x0000, 0x0000, 0x0000, 0x0000<span class="o">]</span>
+    type: <span class="m">00</span>
+    version: <span class="m">00</span>
+    id: <span class="m">0000</span>
+  crc: 0x0000
+  prev_id: <span class="m">0000</span>
+  seq_nr: <span class="m">0000</span>
+  window_wr_lun: <span class="m">00000000</span>
+  next_id: <span class="m">0000</span>
+  nr_lbas: <span class="m">0000</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
